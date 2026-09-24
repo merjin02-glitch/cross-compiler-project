@@ -22,14 +22,13 @@ int main()
     mraa_gpio_dir(switch_pin, MRAA_GPIO_IN);
     mraa_gpio_dir(led_pin, MRAA_GPIO_OUT);
 
-    // LED OFF initially
+
     mraa_gpio_write(led_pin, 1);
 
     while (1)
     {
         switch_state = mraa_gpio_read(switch_pin);
 
-        // Print only when switch status changes
         if (switch_state != previous_state)
         {
             if (switch_state == 1)
