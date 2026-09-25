@@ -1,0 +1,7 @@
+root@rugged-board-a5d2x:~# echo 87 > /sys/class/gpio/export
+root@rugged-board-a5d2x:~# echo out > /sys/class/gpio/PC23/direction
+root@rugged-board-a5d2x:~# echo 0 > /sys/class/gpio/PC23/value
+root@rugged-board-a5d2x:~# echo 1 > /sys/class/gpio/PC23/value
+root@rugged-board-a5d2x:~# echo 0 > /sys/class/gpio/PC23/value
+root@rugged-board-a5d2x:~# echo 1 > /sys/class/gpio/PC23/value
+
